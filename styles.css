@@ -4,6 +4,28 @@ body {
     text-align: center;
 }
 
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#play-button:hover {
+    background-color: #3e8e41;
+}
+
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -30,8 +52,36 @@ body {
     background-color: #e0e0e0;
 }
 
+.X {
+    color: red;
+}
+
+.O {
+    color: blue;
+}
+
 #turn {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+#result {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#reset-button:hover {
+    background-color: #3e8e41;
 }
